@@ -17,8 +17,7 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="index.html">About Me</a></li>
-                <li>Projects</li>
-                <li>Services</li>
+                <li><a href="index.html">Projects</a></li>
                 <li><a href="index.html">Resume</a></li>
             </ul>
         </nav>
@@ -220,25 +219,31 @@
                     </ul>
                 </div>
             </div>
+            <div class="zuri-link">
+                
+                <img class="logo" src="/Image/Zuri-Logo.png" alt="">
+                
+                <div class="description">
+                    <p>Hey there, Zuri Internship Training is ongoing</p>
+                    <p><a href="https://internship.zuri.team/">Click here</a> to apply</p>
+                </div>
+            </div>
            </div>
-    
-           
-    
         </section>
    </main>
    <script>
        let skillRanges = [100,70,55,98,85,85,99,62];
-       let allhr = document.querySelectorAll(".skills li .blue hr");
+       let allhrTag = document.querySelectorAll(".skills li .blue hr");
 
         for (let i = 0; i < skillRanges.length; i++) 
-         allhr[i].style.width = `${skillRanges[i]}%`;  
+         allhrTag[i].style.width = `${skillRanges[i]}%`;  
 
          let languageProficiency = [100,75,45];
-         let allLanguageHr = document.querySelectorAll(".languages li .blue hr");
+         let allLanguageHrTag = document.querySelectorAll(".languages li .blue hr");
       
          for 
          (let i = 0; i < languageProficiency.length; i++) 
-         allLanguageHr[i].style.width = `${languageProficiency[i]}%`; 
+         allLanguageHrTag[i].style.width = `${languageProficiency[i]}%`; 
    </script>
 </body>
 </html>

@@ -36,11 +36,6 @@ body {
   padding: 0.6em .9em;
 }
 
-.nav-bar .logo span {
-  color: #c2bcbc;
-  font-style: italic;
-}
-
 .nav-bar nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +43,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0.8em 1.2em;
+  padding: 1.2em 1.3em;
 }
 
 .nav-bar nav ul li {
