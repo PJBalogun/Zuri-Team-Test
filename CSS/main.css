@@ -1,0 +1,279 @@
+@font-face {
+  font-family: P-bold;
+  src: url(/Fonts/P-bold.ttf);
+}
+
+@font-face {
+  font-family: P-regular;
+  src: url(/Fonts/P-regular.ttf);
+}
+
+:root {
+  --primary-color: #01488b;
+  --sub-heading-1: #19354e;
+  --sub-heading-2: rgb(14, 16, 34);
+  --text-color: rgb(14, 23, 92);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: P-regular;
+  color: var(--text-color);
+  position: relative;
+}
+
+body .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #19354e;
+  color: white;
+}
+
+body .nav-bar .logo {
+  padding: 0.6em .9em;
+}
+
+body .nav-bar .logo span {
+  color: #c2bcbc;
+  font-style: italic;
+}
+
+body .nav-bar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8em 1.2em;
+}
+
+body .nav-bar nav ul li {
+  list-style: none;
+  margin-left: 1.3em;
+}
+
+body .nav-bar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  padding: .5em .8em;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+body .nav-bar nav ul li a:hover {
+  color: #8493fd;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1em;
+  margin-top: 1.6em;
+}
+
+main section.info-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  margin: 1em 2em 1em 0;
+  padding: 1.5em 1em 2.5em 1em;
+  background: var(--primary-color);
+  color: white;
+}
+
+main section.info-left Header {
+  border-bottom: .1em solid white;
+}
+
+main section.info-left Header h1 {
+  font-family: P-bold;
+  font-size: 1.8em;
+}
+
+main section.info-left Header p {
+  font-family: P-bold;
+  font-size: 0.9em;
+}
+
+main section.info-left .heading {
+  font-family: P-bold;
+  font-size: 1.1em;
+  background: var(--sub-heading-1);
+  padding: .3em .5em;
+  margin-top: .8em;
+  border-radius: .5em;
+}
+
+main section.info-left ul {
+  padding: 0 .5em;
+}
+
+main section.info-left ul li {
+  list-style: none;
+  margin-top: 1.2em;
+}
+
+main section.info-left ul li h3 {
+  font-size: 1em;
+  font-family: P-bold;
+}
+
+main section.info-left ul li p {
+  font-size: 0.93em;
+}
+
+main section.info-left ul li .blue {
+  background: var(--sub-heading-1);
+}
+
+main section.info-left ul li .blue hr {
+  display: block;
+  width: 80%;
+  height: .3em;
+  background: white;
+  z-index: 900;
+  margin-top: .4em;
+}
+
+main section.info-left ul li .blue ~ p {
+  font-size: 0.7em;
+  text-align: right;
+}
+
+main section.info-right {
+  width: 100%;
+  margin: 1em 2em 1em 0;
+  padding: 1.5em 1em 2.5em 1em;
+}
+
+main section.info-right .heading h3 {
+  font-family: P-bold;
+  font-size: 1.1em;
+  padding: .3em .5em;
+  margin-top: .8em;
+}
+
+main section.info-right .summary-section {
+  padding: .2em .7em;
+}
+
+main section.info-right .experience-1, main section.info-right .experience-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .3em .5em;
+}
+
+main section.info-right .experience-1 p, main section.info-right .experience-2 p {
+  width: 20%;
+  font-size: .8em;
+  padding-top: .3em;
+}
+
+main section.info-right .experience-1 .exp-info-right, main section.info-right .experience-2 .exp-info-right {
+  padding-left: 2.9em;
+}
+
+main section.info-right .experience-1 .exp-info-right h3, main section.info-right .experience-2 .exp-info-right h3 {
+  font-family: P-bold;
+  font-size: 1em;
+}
+
+main section.info-right .experience-1 .exp-info-right p.company-name, main section.info-right .experience-2 .exp-info-right p.company-name {
+  font-family: P-bold;
+  font-size: .8em;
+}
+
+main section.info-right .experience-1 .exp-info-right ul, main section.info-right .experience-2 .exp-info-right ul {
+  padding-left: 1.3em;
+}
+
+main section.info-right .experience-1 .exp-info-right ul li, main section.info-right .experience-2 .exp-info-right ul li {
+  font-size: .95em;
+}
+
+main section.info-right .experience-1 .exp-info-right ul ~ p, main section.info-right .experience-2 .exp-info-right ul ~ p {
+  width: unset;
+}
+
+main section.info-right .experience-1 .exp-info-right ul ~ p span, main section.info-right .experience-2 .exp-info-right ul ~ p span {
+  font-family: P-bold;
+}
+
+main section.info-right .education-section .education-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.info-right .education-section .education-info p {
+  width: 20%;
+  font-size: .8em;
+  padding-left: .5em;
+}
+
+main section.info-right .education-section .education-info .edu-info-right {
+  padding-left: 0em;
+}
+
+main section.info-right .education-section .education-info .edu-info-right p {
+  font-family: P-bold;
+  font-size: .8em;
+}
+
+main section.info-right .education-section .education-info .edu-info-right h3 {
+  font-family: P-bold;
+  font-size: 1em;
+}
+
+main section.info-right .education-section .education-info .edu-info-right ul {
+  padding-left: 1.3em;
+}
+
+main section.info-right .education-section .education-info .edu-info-right ul li {
+  font-size: .95em;
+}
+
+main section.info-right .certification-section {
+  margin-top: 1.5em;
+}
+
+main section.info-right .certification-section ul {
+  padding-left: 2.5em;
+}
+
+main section.info-right .certification-section ul li {
+  font-size: 0.95em;
+}
+
+main section.info-right .references-section {
+  margin-top: 1.5em;
+}
+
+main section.info-right .references-section ul {
+  padding-left: 2.5em;
+}
+
+main section.info-right .references-section ul li {
+  font-size: 0.95em;
+}
+/*# sourceMappingURL=main.css.map */

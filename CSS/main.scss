@@ -1,0 +1,256 @@
+@font-face {
+    font-family: P-bold;
+    src: url(/Fonts/P-bold.ttf);
+}
+@font-face{
+    font-family: P-regular;
+    src: url(/Fonts/P-regular.ttf);
+}
+
+:root{
+    --primary-color: #01488b;
+    --sub-heading-1: #19354e;
+    --sub-heading-2: rgb(14, 16, 34);
+    --text-color: rgb(14, 23, 92);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: P-regular;
+    color: var(--text-color);
+    position: relative;
+
+    .nav-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: #19354e;
+        color: white;
+    
+        .logo{
+            padding: 0.6em .9em;
+            span{
+                color: rgb(194, 188, 188);
+                font-style: italic;
+            }
+        }
+    
+        nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                padding: 0.8em 1.2em;
+    
+                li{
+                    list-style: none;
+                    margin-left: 1.3em;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1.1em;
+                        padding: .5em .8em;
+                        transition: .3s ease-in;
+
+                    &:hover{
+                        color: rgb(132, 147, 253);
+                    }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+main{
+    display:flex;
+    padding: 0 1em;
+    margin-top: 1.6em;
+
+    section.info-left{
+        display: flex;
+        width: 35%;
+        margin: 1em 2em 1em 0;
+        padding: 1.5em 1em 2.5em 1em;
+        background: var(--primary-color);
+        color: white;
+
+        Header{
+            border-bottom: .1em solid white;
+            h1{
+                font-family: P-bold;
+                font-size: 1.8em;
+            }
+            p{
+                font-family: P-bold;
+                 font-size: 0.9em;
+            }
+        }
+
+        .heading{
+            font-family: P-bold;
+            font-size: 1.1em;
+            background: var(--sub-heading-1);
+            padding: .3em .5em;
+            margin-top: .8em;
+            border-radius: .5em;
+        }
+
+        ul{
+            padding: 0 .5em;
+            li{
+                list-style: none;
+                margin-top: 1.2em;
+                h3{
+                    font-size: 1em;
+                    font-family: P-bold;
+                } 
+
+                p{
+                    font-size: 0.93em;                   
+                }
+
+                .blue{
+                    background: var(--sub-heading-1);
+
+                    hr{
+                        display: block;
+                        width: 80%;
+                        height: .3em;
+                        background: white;
+                        z-index: 900;
+                        margin-top: .4em;
+                    }
+
+                    &~p{
+                        font-size: 0.7em;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    section.info-right{
+        width: 100%;
+        margin: 1em 2em 1em 0;
+        padding: 1.5em 1em 2.5em 1em;
+
+        .heading h3{
+            font-family: P-bold;
+            font-size: 1.1em;
+            padding: .3em .5em;
+            margin-top: .8em;
+        }
+
+        .summary-section{
+            padding: .2em .7em;
+        }
+
+        .experience-1 , .experience-2{
+            display: flex;
+            padding: .3em .5em;
+
+
+            p{
+                width: 20%;
+                font-size: .8em;
+                padding-top: .3em;
+            }
+
+            .exp-info-right{
+
+                padding-left: 2.9em;
+                h3{
+                    font-family: P-bold;
+                    font-size: 1em;
+                }
+                p.company-name{
+                    font-family: P-bold;
+                    font-size: .8em;
+                }
+
+               ul{
+                   
+                padding-left: 1.3em ;
+                li{
+                    font-size: .95em;
+                }
+                   &~ p {
+                       width: unset;
+                    span{
+                        font-family: P-bold;
+                        
+                    }
+                }
+               }
+            }
+        }
+        .education-section{
+
+            .education-info{
+                display: flex;
+
+                p{
+                    width: 20%;
+                    font-size: .8em;
+                    padding-left: .5em;
+                }
+
+                .edu-info-right{
+                    padding-left: 0em;
+                    p{
+                        font-family: P-bold;
+                        font-size: .8em;
+                    }
+
+                    h3{
+                        font-family: P-bold;
+                        font-size: 1em;
+                    }
+
+                    ul{
+                        padding-left: 1.3em;
+                        li{
+                            font-size: .95em;
+                        }
+                    }     
+                }
+            }
+        }
+
+        .certification-section{
+
+            margin-top: 1.5em;
+            ul{
+                padding-left: 2.5em;
+                li{
+                    font-size: 0.95em;
+                }
+            }
+        }
+
+        .references-section{
+            margin-top: 1.5em;
+            ul{
+                padding-left: 2.5em;
+                li{
+                    font-size: 0.95em;
+                }
+            }
+        }
+    }
+    
+}
