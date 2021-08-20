@@ -304,4 +304,32 @@ main section.info-right .zuri-link .description {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.zuri-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--text-color);
+  font-family: P-bold;
+  margin-top: 4em;
+  padding: .3em .2em;
+  float: right;
+}
+
+.logo {
+  width: 5em;
+  height: 5em;
+  padding: .2em .2em;
+  margin-right: 1.5em;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /*# sourceMappingURL=main.css.map */

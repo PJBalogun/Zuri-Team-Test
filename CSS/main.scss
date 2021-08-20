@@ -273,3 +273,22 @@ main{
     }
     
 }
+
+.zuri-link{
+    display: flex;
+    color: var(--text-color);
+    font-family: P-bold;
+    margin-top: 4em;
+    padding: .3em .2em;
+    float: right;
+}
+.logo{
+    width: 5em;
+    height: 5em;
+    padding: .2em .2em;
+    margin-right: 1.5em;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+}
