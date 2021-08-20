@@ -37,7 +37,8 @@ body{
 
             li{
                 list-style: none;
-                margin-left: 1.3em;
+                margin-left: 1.3em; 
+
                 a{
                     text-decoration: none;
                     color: white;
@@ -52,6 +53,11 @@ body{
             }
         }
     }
+}
+
+nav ul li:nth-child(1){
+    background: rgb(26, 34, 141);
+    border-radius: .5em;
 }
 .background{
     display: flex;

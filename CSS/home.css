@@ -64,6 +64,11 @@ body {
   color: #8493fd;
 }
 
+nav ul li:nth-child(1) {
+  background: #1a228d;
+  border-radius: .5em;
+}
+
 .background {
   display: -webkit-box;
   display: -ms-flexbox;
